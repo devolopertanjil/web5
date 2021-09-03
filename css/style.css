@@ -1,0 +1,500 @@
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            Common css start
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Yeseva One', cursive;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+img{
+    vertical-align: middle;
+}
+.container{
+    max-width: 1250px;
+    margin: 0 auto;
+}
+.clr{
+    clear: both;
+}
+:root{
+    --cmncol: #cc9900;
+}
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@400;700&family=Yeseva+One&display=swap');
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            Common css end
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            Header part start
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+#header_part {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	/* background: linear-gradient(to top, rgba(255, 255, 255, 0.0) 0%, rgba(0, 0, 0, 0.8) 100%); */
+	background: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+}
+.header_flx{
+    display: flex;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 20%;
+    margin-right: auto;
+    padding: 10px 0;
+}
+
+.main_menu li{
+    display: inline-block;
+}
+
+.main_menu li a{
+    padding: 54px 24px 43px;
+    color: #fff;
+    font-size: 21px;
+    font-weight: 400;
+    font-family: 'Gentium Book Basic', serif;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.main_menu li a.active {
+	/* box-shadow: inset 0px 3px 0 0 #fff; */
+    border-top: 3px solid #fff;
+}
+.main_menu li a:hover {
+    border-top: 3px solid #fff;
+	/* box-shadow: inset 0px 3px 0 0 #fff; */
+	
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            Header part end
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            Banner part start
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+#banner_part{
+    padding: 237px 0 142px;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    text-align: center;
+}
+.ban_txt h1{
+    color: #fff;
+    font-size: 90px;
+    font-weight: 400;
+}
+.ban_icon{
+    margin-top: 30px;
+    margin-bottom: 34px;
+}
+
+.ban_btn a{
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid #fff;
+    padding: 20px 50px;
+    margin-right: 30px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.ban_btn a:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid #000;
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            Banner part end
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            Food part start
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+#food_part{
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    padding: 75px 0 88px;
+    text-align: center;
+}
+.food_flx{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.food_col {
+	max-width: 45%;
+	margin-left: 60px;
+}
+.plate {
+	position: absolute;
+	right: 70px;
+	top: -45px;
+}
+.food_col h2{
+    color: var(--cmncol);
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 14px;
+}
+.food_col p {
+	/* width: 430px; */
+	margin-top: 29px;
+	color: #4c4c4c;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: 'Lato', sans-serif;
+	line-height: 24px;
+	margin-bottom: 55px;
+	padding: 0 70px;
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            Food part end
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            Fine ingredients part start
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+#ingredients_part{
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    padding: 100px 0;
+}
+.ingredients_flx{
+    display: flex;
+    flex-wrap: wrap;
+}
+.ingredients_col{
+    width: 50%;
+    text-align: center;
+}
+.ingredients_col h2{
+    color: #fff;
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 14px;
+}
+
+.ingredients_col p{
+    /* width: 430px; */
+    margin-top: 29px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    line-height: 24px;
+    margin-bottom: 75px;
+}
+.ingredients_col ul li{
+    display: inline-block;
+    margin-right: 30px;
+}
+.ingredients_col ul li:last-child{
+    margin-right: 0;
+}
+.ingredients_col_content{
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 80PX;
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            Fine ingredients part end
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            Res Menu part start
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+#res_menu_part{
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    padding: 108px 0;
+}
+.res_menu_flx{
+    display: flex;
+    flex-wrap: wrap;
+}
+.res_menu_col{
+    max-width: 45%;
+    margin-right: 170px;
+}
+.res_menu_col:first-child{
+    margin-left: 110px;    
+}
+.res_menu_col:nth-child(2){
+    margin-right: 0;
+    margin-left: 110px;
+}
+.res_menu_col:nth-child(3){
+    margin-top: 70px;
+    margin-left: 110px;
+}
+.res_menu_col:last-child {
+	margin-top: -22px;
+    margin-right: 0;
+    margin-left: 110px;
+}
+.cmn_menu_head{
+    text-align: center;
+}
+
+.cmn_menu_head h2{
+    color: var(--cmncol);
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+.cmn_menu_txt{
+    margin-top: 30px;
+}
+.cmn_menu_txt .menu_title .menu_name{
+    max-width: 90%;
+    color: var(--cmncol);
+    font-size: 21px;
+    font-weight: 400;
+    
+}
+.cmn_menu_txt .menu_title .menu_price{
+    /* max-width: 10%; */
+    color: var(--cmncol);
+    font-size: 21px;
+    font-weight: 400;
+    float: right;
+}
+.cmn_menu_txt ul li p{
+    color: #4c4c4c;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    margin-top: 20px;
+}
+.cmn_menu_txt .menu_title{
+    position: relative;
+}
+.cmn_menu_txt .menu_title::after {
+	position: absolute;
+	content: "";
+	left: 0;
+	top: 32px;
+	border: .5px solid rgba(200, 159, 45, 0.5);
+	width: 100%;
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            Res Menu part end
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            Guest Reviews part start
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+#reviews_part{
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    padding: 100px 0;
+}
+.reviews_col{
+    max-width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+.reviews_txt {
+	background-color: rgba(0, 0, 0, 0.6);
+	width: 683px;
+	padding: 50px;
+	position: relative;
+}
+.reviews_txt h2{
+    color: #fff;
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 13px;
+}
+.reviews_txt i {
+	position: absolute;
+	color: #dde0df;
+    font-size: 20px;
+	top: 155px;
+	left: 30px;
+}
+.reviews_txt p {
+	color: #dde0df;
+	font-size: 25px;
+	font-weight: 400;
+	font-family: 'Gentium Book Basic', serif;
+	/* padding: 0 33px; */
+	line-height: 45px;
+	margin-top: 23px;
+    
+}
+.reviews_txt p span{
+	color: #fff;
+	font-size: 18px;
+	font-weight: 400;
+	font-family: 'Lato', sans-serif;
+	margin-top: 26px;
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            Guest Reviews part end
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            Second food part start
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+#second_food_part{
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    padding: 75px 0 88px;
+    text-align: center;
+}
+.second_food_flx{
+    display: flex;
+    flex-wrap: wrap;
+}
+.second_food_col {
+	max-width: 46%;
+	margin-right: 32px;
+}
+.second_food_col:first-child{
+    margin-left: 40px;
+}
+.second_food_col h2{
+    color: var(--cmncol);
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 14px;
+}
+.second_food_col p {
+	margin-top: 29px;
+	color: #4c4c4c;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: 'Lato', sans-serif;
+	line-height: 24px;
+	margin-bottom: 55px;
+	padding: 0 70px;
+}
+.second_food_col p span{
+    display: inline-block;
+    margin-top: 10px;
+}
+.second_food_col .lft_img img:first-child{
+    margin-right: 25px;
+}
+
+.second_food_col .lft_img img{
+    max-width: 100%;
+}
+.con_col{
+    display: flex;
+    flex-wrap: wrap;
+}
+.con_col label{
+    color: var(--cmncol);
+    font-size: 14px;
+    font-weight: 400;
+    display: block;
+}
+.con_col input{
+    max-width: 198px;
+    padding: 14px 14px;
+}
+.name,
+.date{
+    margin-right: 30px;
+}
+.btn {
+	color: #fff;
+	padding: 12px 60px;
+	background-color: var(--cmncol);
+	margin-top: 22px;
+}
+.pos{
+    text-align: center;
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            Second food part end
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            Footer part start
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+#footer_part{
+    padding: 60px 0;
+    background-color: #000;
+    text-align: center;
+}
+.foot_txt{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.footer_col {
+	max-width: 380px;
+    
+}
+.footer_txt h4{
+    color: #fefefe;
+    font-size: 21px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.footer_txt p{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 24px;
+    margin-top: 23px;
+}
+.footer_txt p span{
+    display: block;
+}
+.footer_txt ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* justify-content: space-evenly; */
+}
+.footer_txt ul li i{
+    color: #fff;
+    margin-top: 50px;
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            Footer part end
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+
+
+
+
+
+
+
+
+
